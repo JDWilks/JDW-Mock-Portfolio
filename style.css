@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template:
+    "header header header" 100px
+    "left-menu main right-menu" 1fr
+    "footer footer footer" 50px /
+    200px 1fr 1fr;
+
+  height: 100vh;
+  grid-gap: 5px;
+}
+
+.header {
+  grid-area: header;
+  background-image: linear-gradient(#74ebd5, #acb6e5);
+}
+
+.left-menu {
+  grid-area: left-menu;
+  background-image: linear-gradient(#acb6e5, #74ebd5);
+}
+
+.main {
+  grid-area: main;
+  background-image: linear-gradient(#acb6e5, #74ebd5);
+}
+
+.right-menu {
+  background-image: linear-gradient(#acb6e5, #74ebd5);
+
+  grid-area: right-menu;
+}
+
+.footer {
+  grid-area: footer;
+
+  background-image: linear-gradient(#74ebd5, #acb6e5);
+}
