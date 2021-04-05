@@ -7,7 +7,7 @@
 .container {
   display: grid;
   grid-template:
-    "header header header" 100px
+    "header header header" 80px
     "left-menu main right-menu" 1fr
     "footer footer footer" 50px /
     200px 1fr 1fr;
@@ -19,6 +19,12 @@
 .header {
   grid-area: header;
   background-image: linear-gradient(#74ebd5, #acb6e5);
+  font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+  text-justify: center;
 }
 
 .left-menu {
@@ -41,4 +47,29 @@
   grid-area: footer;
 
   background-image: linear-gradient(#74ebd5, #acb6e5);
+}
+
+/* media quieries */
+
+@media screen and (max-width: 800px) {
+  .container {
+    grid-template:
+      "header header" 50px
+      " main right-menu" 1fr
+      "left-menu left-menu" 50px
+      " footer footer" 50px /
+      1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    grid-template:
+      "header" 50px
+      " main " 1fr
+      "right-menu" 1fr
+      "left-menu " 50px
+      " footer " 50px /
+      1fr;
+  }
 }
