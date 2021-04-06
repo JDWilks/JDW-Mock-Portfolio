@@ -39,6 +39,10 @@
   padding-top: 10px;
 }
 
+li {
+  padding-left: 25px;
+}
+
 .links a {
   color: inherit;
 }
@@ -60,6 +64,7 @@
 }
 
 .Github-logo {
+  /* position: sticky; */
   height: 50px;
   margin-left: 10px;
   margin-top: 10px;
@@ -89,6 +94,7 @@
 }
 
 .Creative-logo {
+  /* position: sticky; */
   height: 50px;
   margin-left: 10px;
   margin-top: 10px;
